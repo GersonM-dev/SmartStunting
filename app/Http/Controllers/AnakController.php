@@ -15,6 +15,10 @@ class AnakController extends Controller
             ->where('user_id', Auth::id())
             ->get();
 
+        if ($anak->isEmpty()) {
+            return response()->json(['message' => 'No data found'], 404);
+        }
+
         return response()->json($anak);
     }
 
