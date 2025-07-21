@@ -16,7 +16,7 @@ class AnakController extends Controller
             ->get();
 
         if ($anak->isEmpty()) {
-            return response()->json(['message' => 'No data found'], 404);
+            return response()->json(['message' => 'No data found'], 200);
         }
 
         return response()->json($anak);
