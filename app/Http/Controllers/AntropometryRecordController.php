@@ -8,9 +8,6 @@ use Illuminate\Support\Facades\Auth;
 
 class AntropometryRecordController extends Controller
 {
-    // Optionally use auth middleware, or just use it in routes
-
-    // List all records for current user
     public function index()
     {
         $records = AntropometryRecord::with(['anak', 'predictionRecord', 'user'])

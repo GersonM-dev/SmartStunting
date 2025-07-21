@@ -48,7 +48,7 @@ class AntropometryRecord extends Model
 
         static::created(function (self $record) {
             // Create a default prediction record first to satisfy constraints
-            $defaultPrediction = $record->predictionRecords()->create([
+            $defaultPrediction = $record->predictionRecord()->create([
                 'user_id'                 => $record->user_id,
                 'anak_id'                 => $record->anak_id,
                 'antropometry_record_id'  => $record->id,
