@@ -254,6 +254,69 @@ Returns all prediction records for the authenticated user, with anak, antropomet
 
 ---
 
+## User API
+
+All User endpoints require authentication (`Authorization: Bearer {token}`).
+
+### Get Profile
+
+**GET /user**
+
+Returns the profile of the currently authenticated user.
+
+**Response:**
+
+```json
+{
+  "id": 2,
+  "name": "John Doe",
+  "phone": "08123456789",
+  "email": "john@example.com"
+  // ...other fields
+}
+```
+
+---
+
+### Update Profile
+
+**PUT /user**
+
+Update the authenticated user's information. Only send the fields you want to update.
+
+**Body:**
+
+```json
+{
+  "name": "New Name",
+  "phone": "081212121212",
+  "email": "new@email.com",
+  "password": "newpassword",
+  "password_confirmation": "newpassword"
+}
+```
+
+**Response:**
+Returns the updated user object.
+
+---
+
+### Delete Account
+
+**DELETE /user**
+
+Deletes the authenticated user account.
+
+**Response:**
+
+```json
+{
+  "message": "User deleted"
+}
+```
+
+---
+
 ## Authentication Required
 
 For all endpoints except `/register` and `/login`, set HTTP header:
