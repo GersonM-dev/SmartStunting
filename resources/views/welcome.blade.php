@@ -98,7 +98,7 @@
   <div class="container">
     <h1>SmartStunting</h1>
     <p>Empower growth with data-driven insights. SmartStunting helps you track, analyze, and optimize for smarter decisions.</p>
-    <a href="/smartstunting.zip" class="cta" download>Download Now</a>
+    <a href="/ss.png" class="cta" download>Download Now</a>
 
     <div class="features">
       <div class="feature">
@@ -106,8 +106,8 @@
         <p>Visualize your progress instantly with our interactive dashboards.</p>
       </div>
       <div class="feature">
-        <h3>Custom Alerts</h3>
-        <p>Get notified when key metrics hit your targets.</p>
+        <h3>Valid Recommendations</h3>
+        <p>Receive actionable insights based on your data trends.</p>
       </div>
       <div class="feature">
         <h3>Secure Storage</h3>
