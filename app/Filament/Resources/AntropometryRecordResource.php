@@ -18,8 +18,10 @@ class AntropometryRecordResource extends Resource
 {
     protected static ?string $model = AntropometryRecord::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-s-clock';
 
+    protected static ?string $pluralLabel = "Riwayat Prediksi";
+    
     public static function form(Form $form): Form
     {
         return $form
